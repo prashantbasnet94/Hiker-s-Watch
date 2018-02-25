@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.prashant.hikerswatch.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@drawable/a"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="253dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/marker"
+        tools:layout_editor_absoluteY="33dp" />
+
+    <TextView
+        android:id="@+id/textViewc"
+        android:layout_width="361dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="23dp"
+        android:layout_marginTop="116dp"
+        android:fontFamily="@font/monoton"
+        android:text="LOCATION"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.779"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <TextView
+        android:id="@+id/textViewb"
+        android:layout_width="361dp"
+        android:layout_height="58dp"
+        android:layout_alignEnd="@+id/gridLayout"
+        android:layout_alignTop="@+id/textViewa"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="79dp"
+        android:fontFamily="@font/monoton"
+        android:text="YOUR      CURRENT"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.087" />
+
+    <TextView
+        android:id="@+id/textViewa"
+        android:layout_width="361dp"
+        android:layout_height="58dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/gridLayout"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/monoton"
+        android:text="INFORMATION    OF "
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.959"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="376dp"
+        android:layout_height="441dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="50dp"
+        android:columnCount="1"
+        android:rowCount="6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.943"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.991"
+        tools:ignore="MissingConstraints">
+
+
+        <TextView
+            android:id="@+id/textView0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:fontFamily="@font/berkshire_swash"
+            android:text="Lattitude :"
+
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:fontFamily="@font/berkshire_swash"
+            android:text="Longitude :"
+            android:textColor="@android:color/background_light"
+
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="920dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:fontFamily="@font/berkshire_swash"
+            android:text="Altitude :"
+            android:textColor="@android:color/background_light"
+
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="1849dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:fontFamily="@font/berkshire_swash"
+            android:text="Locality :"
+
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="2758dp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:fontFamily="@font/berkshire_swash"
+            android:text="Admin :"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="3667dp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:fontFamily="@font/berkshire_swash"
+            android:text="Country :"
+            android:textColor="@android:color/background_light"
+
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="4561dp" />
+
+
+    </GridLayout>
+
+</android.support.constraint.ConstraintLayout>
